@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <title>Game Mania | Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" rel="preload" as="style">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!-- Nerd Fonts -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css" crossorigin="anonymous" rel="preload" as="style">
+
+    <!-- Internal -->
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/login.js" type="module" defer></script>
+  </head>
+  <body>
+    <main class="container" style="min-height: 90svh;">
+      <section class="card w-100 my-5 d-flex flex-column lg-flex-row shadow" id="formLogin">
+        <div class="card-img bg-image bg-image__login lg-w-40rem lg-h-25rem" style="min-height: 10rem;"></div>
+        <div class="card-body" style="min-width: 17rem;">
+          <h1 class="text-center mb-4">Login</h1>
+          <form class="form">
+            <label for="loginUsername" class="w-100 input-group mb-3">
+              <span class="input-group-text nf nf-md-account" aria-hidden="true"></span>
+              <input type="text" name="loginUsername" id="loginUsername" class="form-control bg-tertiary" aria-label="Digite seu nome" placeholder="Usuário" required>
+            </label>
+            <label for="loginPassword" class="w-100 input-group mb-3">
+              <span class="input-group-text nf nf-md-key" aria-hidden="true"></span>
+              <input type="password" name="loginPassword" id="loginPassword" class="form-control bg-tertiary" aria-label="Digite sua senha" placeholder="Senha" required>
+            </label>
+            <button type="button" id="btnLogin" class="btn btn-primary d-block m-auto mb-4 px-3 py-2">Login</button>
+            <p class="text-danger text-center d-none" id="loginEmptyFields">Preencha todos os campos corretamente</p>
+            <p class="text-danger text-center d-none" id="loginIncorrectValues">Usuário e/ou senha incorretos</p>
+            <button type="button" id="btnCreateRegistration" class="btn btn-link">Criar cadastro</button>
+          </form> 
+        </div>
+      </section>
+
+      <section class="card w-100 my-5 d-flex flex-column lg-flex-row shadow d-none" id="formRegister">
+        <div class="card-img bg-image bg-image__register lg-w-40rem lg-h-25rem" style="min-height: 10rem;"></div>
+        <div class="card-body" style="min-width: 17rem;" id="formRegister">
+          <h1 class="text-center mb-4">Cadastro</h1>
+          <form class="form">
+            <label for="registerUsername" class="w-100 input-group mb-3">
+              <span class="input-group-text nf nf-md-account" aria-hidden="true"></span>
+              <input type="text" name="registerUsername" id="registerUsername" class="form-control bg-tertiary" aria-label="Digite seu nome" placeholder="Usuário" required>
+            </label>
+            <label for="registerEmail" class="w-100 input-group mb-3">
+              <span class="input-group-text nf nf-md-email" aria-hidden="true"></span>
+              <input type="email" name="registerEmail" id="registerEmail" class="form-control bg-tertiary" aria-label="Digite seu email" placeholder="E-mail" required>
+            </label>
+            <label for="registerPassword" class="w-100 input-group mb-3">
+              <span class="input-group-text nf nf-md-key" aria-hidden="true"></span>
+              <input type="password" name="registerPassword" id="registerPassword" class="form-control bg-tertiary" aria-label="Digite sua senha" placeholder="Senha" required>
+            </label>
+            <button type="button" id="btnRegister" class="btn btn-primary d-block m-auto mb-4 px-3 py-2">Cadastrar</button>
+            <p class="text-danger text-center d-none" id="registerEmptyFields">Preencha todos os campos corretamente</p>
+            <p class="text-success text-center d-none" id="registerSuccess">Usuário cadastrado com sucesso</p>
+            <button type="button" id="btnBackLogin" class="btn btn-link">Voltar</button>
+          </form> 
+        </div>  
+      </section>
+    </main>
+    <footer class="bg-primary py-3">
+      <p class="text-center">Site desenvolvido por <a href="https://github.com/ph-fullstack" target="_blank" class="link-light">ph-fullstack</a></p>
+    </footer>
+  </body>
+</html>

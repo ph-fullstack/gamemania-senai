@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+  <head>
+    <title>Game Mania | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!-- Nerd Fonts -->
+    <link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css" crossorigin="anonymous">
+
+    <!-- Internal -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js" type="module"></script>
+  </head>
+  <body>
+    <header class="fixed-top">
+      <div class="bg-primary">
+        <nav class="container navbar navbar-expand-lg p-2">
+          <a href="/" class="navbar-brand mb-0 h1">Game Mania</a>
+
+          <div class="collapse navbar-collapse w-100 d-flex-lg flex-row justify-content-around" id="navbarLinks">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Laptops</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Desktops</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Monitores</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Acessórios</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Celulares</a>
+              </li>
+              <li class="nav-item">
+                <a href="/" class="nav-link">Consoles</a>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-link nav-link" id="btnLogout">Sair</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="navbar-nav ms-auto d-flex flex-row justify-content-end gap-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link nf nf-oct-search fs-5" aria-label="Pesquisar"></a>
+            </li>     
+            <li class="nav-item">
+              <a href="#" class="nav-link nf nf-md-cart_variant fs-5" aria-label="Carrinho"></a>
+            </li>     
+            <li class="nav-item">
+              <a href="#" class="nav-link nf nf-md-account fs-5" aria-label="Conta"></a>
+            </li>     
+          </ul>
+
+          <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section style="height: 100svh" class="position-relative z-n1 d-flex flex-column justify-content-center">
+        <div class="bg-image bg-image__home z-0 position-absolute top-0 start-0 w-100 h-100 opacity-25"></div>
+        <h1 class="text-center text-white z-1 appear animation-forwards">Preparado para Jogar?</h1>
+        <p class="text-center text-white z-1 appear animation-forwards animation-delay">Aqui você encontra tudo que precisa!</p>
+      </section>
+      <section class="my-5">
+        <div class="container-fluid">
+          <h2 class="text-center mb-3">Categorias</h2>
+          <nav class="navbar-nav overflow-x-scroll d-flex flex-row gap-4 xl-justify-content-center">
+            <a href="#" class="nav-item nav-link">
+              <div class="card hover-bg-primary" style="width: 10rem;">
+                <img src="assets/images/mockup-notebook-nav.jpg" alt="Laptops" class="card-img-top w-100" style="height: 7.5rem">
+                <div class="card-body">
+                  <p class="card-title text-center fw-bold">Laptops</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="nav-item nav-link">
+              <div class="card hover-bg-primary" style="width: 10rem;">
+                <img src="assets/images/mockup-desktop-nav.jpg" alt="Desktops" class="card-img-top w-100" style="height: 7.5rem">
+                <div class="card-body">
+                  <p class="card-title text-center fw-bold">Desktops</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="nav-item nav-link">
+              <div class="card hover-bg-primary" style="width: 10rem;">
+                <img src="assets/images/mockup-monitor-nav.jpg" alt="Monitores" class="card-img-top w-100" style="height: 7.5rem">
+                <div class="card-body">
+                  <p class="card-title text-center fw-bold">Monitores</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="nav-item nav-link">
+              <div class="card hover-bg-primary" style="width: 10rem;">
+                <img src="assets/images/mockup-accessories-nav.jpg" alt="Acesórios" class="card-img-top w-100" style="height: 7.5rem">
+                <div class="card-body">
+                  <p class="card-title text-center fw-bold">Acesórios</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="nav-item nav-link">
+              <div class="card hover-bg-primary" style="width: 10rem;">
+                <img src="assets/images/mockup-smartphone-nav.jpg" alt="Celulares" class="card-img-top w-100" style="height: 7.5rem">
+                <div class="card-body">
+                  <p class="card-title text-center fw-bold">Celulares</p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="nav-item nav-link">
+              <div class="card hover-bg-primary" style="width: 10rem;">
+                <img src="assets/images/mockup-console-nav.jpg" alt="Consoles" class="card-img-top w-100" style="height: 7.5rem">
+                <div class="card-body">
+                  <p class="card-title text-center fw-bold">Consoles</p>
+                </div>
+              </div>
+            </a>
+          </nav>
+        </div> 
+      </section>
+      <section class="container row gap-4 column-gap-2 my-5 m-auto">
+        <article class="col-lg px-2 py-4 rounded bg-tertiary">
+          <h2 class="text-center text-balance mb-3">Notebook para qualquer jogo</h2>
+          <div class="row">
+            <img src="assets/images/mockup-notebook-section.png" alt="Notebook Gamer" class="m-auto col-sm-5 col-lg-12 col-xl-5" style="max-width: 20rem">
+            <div class="col-sm-7 col-lg-12 col-xl-7 py-2">
+              <ul role="list">
+                <li><span class="nf nf-md-monitor_screenshot icon-list" aria-hidden="true"></span>Display 15.6" 1920x1080 Full HD 120Hz</li>
+                <li><span class="nf nf-oct-cpu icon-list" aria-hidden="true"></span>CPU Intel Core I7 13650HX</li>
+                <li><span class="nf nf-md-memory icon-list" aria-hidden="true"></span>16GB RAM 3200MHz DDR4</li>
+                <li><span class="nf nf-md-video icon-list" aria-hidden="true"></span>GPU NVIDIA GeForce RTX 4050</li>
+                <li><span class="nf nf-fa-hdd_o icon-list" aria-hidden="true"></span>1TB SSD SATA III</li>
+              </ul>
+              <div>
+                <p class="text-center fs-4">por <strong class="text-success">R$ 5.749,99</strong></p>
+              </div>
+              <div class="d-flex justify-content-center gap-2">
+                <button type="button" class="btn btn-link">Saiba Mais</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>  
+          </div>
+        </article>
+        <article class="col-lg px-2 py-4 rounded bg-tertiary">
+          <h2 class="text-center text-balance mb-3">Celular para qualquer jogo</h2>
+          <div class="row">
+            <img src="assets/images/mockup-smartphone-section.png" alt="Notebook Game" class="m-auto col-sm-6 col-lg-12 col-xl-6" style="max-width: 20rem">
+            <div class="col-sm-6 col-lg-12 col-xl-6 py-2">
+              <ul role="list">
+                <li><span class="nf nf-md-monitor_screenshot icon-list" aria-hidden="true"></span>Display 6.67" 1080x2400 OLED 144Hz</li>
+                <li><span class="nf nf-oct-cpu icon-list" aria-hidden="true"></span>CPU Octa-core</li>
+                <li><span class="nf nf-md-memory icon-list" aria-hidden="true"></span>12GB RAM 3200MHz</li>
+                <li><span class="nf nf-md-video icon-list" aria-hidden="true"></span>GPU Qualcomm Adreno 730</li>
+                <li><span class="nf nf-fa-hdd_o icon-list" aria-hidden="true"></span>256GB de armazenamento</li>
+              </ul>
+              <div>
+                <p class="text-center fs-4">por <strong class="text-success">R$ 3.989,70</strong></p>
+              </div>
+              <div class="d-flex justify-content-center gap-2">
+                <button type="button" class="btn btn-link">Saiba Mais</button>
+                <button type="button" class="btn btn-primary">Comprar</button>
+              </div>
+            </div>  
+          </div>
+        </article>  
+      </section>
+    </main>
+    <footer class="bg-primary py-4">
+      <p class="text-center">Site desenvolvido por <a href="https://github.com/ph-fullstack" target="_blank" class="link-light">ph-fullstack</a></p>
+    </footer>
+  </body>
+</html>
